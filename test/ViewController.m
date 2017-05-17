@@ -16,14 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self addSubViews];
+    
+    
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 创建布局
+-(void)addSubViews
+{
+    UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
+    label.text = @"欢迎进入";
+    label.textColor = [UIColor redColor];
+    label.font = [UIFont systemFontOfSize:50];
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [self.view addSubview:label];
+    
 }
-
-
 @end
