@@ -1,0 +1,37 @@
+//
+//  lpf.pch
+//  test
+//
+//  Created by 李鹏飞 on 2017/5/18.
+//  Copyright © 2017年 李鹏飞. All rights reserved.
+//
+
+#ifndef lpf_h
+#define lpf_h
+
+#import "NSString+Extension.h"
+#import "NSObject+PYThemeExtension.h"
+
+
+#ifdef DEBUG
+#define LPFLOG(...) NSLog(__VA_ARGS__);
+#define LOG_METHOD NSLog(@"%s", __func__);
+#else
+#define LPFLOG(...); #define LOG_METHOD;
+#endif
+//屏幕宽高尺寸
+#define  LPFHeight  [[UIScreen mainScreen] bounds].size.height
+#define  LPFWidth   [[UIScreen mainScreen] bounds].size.width
+
+// 颜色
+#define LPFColor(r, g, b) [UIColor colorWithRed:(r)/255.00 green:(g)/255.00 blue:(b)/255.00 alpha:1.0]
+//  颜色 带透明度
+#define LPFColorAlpha(r, g, b,a) [UIColor colorWithRed:(r)/255.00 green:(g)/255.00 blue:(b)/255.00 alpha:a]
+// 随机色
+#define LPFRandomColor WLColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+//宽高比系数计算(宽高必须是按4寸屏给出的)
+#define LPFFitWidth(width) (width/(double)320)*Screen_width
+#define LPFFitHeight(height) (height /(double)568)*Screen_height
+
+#endif /* lpf_h */

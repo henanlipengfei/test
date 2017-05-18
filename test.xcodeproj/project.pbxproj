@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810474471ECD47AC0067CEC6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474461ECD47AC0067CEC6 /* NSString+Extension.m */; };
+		8104744D1ECD50EF0067CEC6 /* LPFMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8104744C1ECD50EF0067CEC6 /* LPFMainTabBarController.m */; };
+		810474511ECD75270067CEC6 /* LPFBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474501ECD75270067CEC6 /* LPFBaseTableViewController.m */; };
+		810474541ECD75450067CEC6 /* LPFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474531ECD75450067CEC6 /* LPFBaseViewController.m */; };
+		8104745C1ECD8BC50067CEC6 /* LPFTarBarButon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8104745B1ECD8BC50067CEC6 /* LPFTarBarButon.m */; };
+		8104745F1ECD8C6E0067CEC6 /* LPFTarBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8104745E1ECD8C6E0067CEC6 /* LPFTarBar.m */; };
+		810474621ECD901B0067CEC6 /* LPFReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474611ECD901B0067CEC6 /* LPFReleaseViewController.m */; };
+		810474651ECD90440067CEC6 /* LPFAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474641ECD90440067CEC6 /* LPFAttentionViewController.m */; };
+		810474681ECD905B0067CEC6 /* LPFFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474671ECD905B0067CEC6 /* LPFFriendsViewController.m */; };
+		8104746B1ECD906C0067CEC6 /* LPFFindsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8104746A1ECD906C0067CEC6 /* LPFFindsViewController.m */; };
+		8104746E1ECDA1E10067CEC6 /* LPFMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8104746D1ECDA1E10067CEC6 /* LPFMainNavigationController.m */; };
+		810474721ECDA3C70067CEC6 /* NSObject+PYThemeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 810474711ECDA3C70067CEC6 /* NSObject+PYThemeExtension.m */; };
 		814B1A9D1EC8456400CFFBC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 814B1A9C1EC8456400CFFBC7 /* main.m */; };
 		814B1AA01EC8456400CFFBC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 814B1A9F1EC8456400CFFBC7 /* AppDelegate.m */; };
-		814B1AA31EC8456400CFFBC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814B1AA21EC8456400CFFBC7 /* ViewController.m */; };
 		814B1AA61EC8456400CFFBC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814B1AA41EC8456400CFFBC7 /* Main.storyboard */; };
 		814B1AA81EC8456400CFFBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814B1AA71EC8456400CFFBC7 /* Assets.xcassets */; };
 		814B1AAB1EC8456400CFFBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814B1AA91EC8456400CFFBC7 /* LaunchScreen.storyboard */; };
@@ -35,12 +46,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810474451ECD47AC0067CEC6 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		810474461ECD47AC0067CEC6 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		810474491ECD49640067CEC6 /* lpf.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lpf.pch; sourceTree = "<group>"; };
+		8104744B1ECD50EF0067CEC6 /* LPFMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFMainTabBarController.h; sourceTree = "<group>"; };
+		8104744C1ECD50EF0067CEC6 /* LPFMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFMainTabBarController.m; sourceTree = "<group>"; };
+		8104744F1ECD75270067CEC6 /* LPFBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFBaseTableViewController.h; sourceTree = "<group>"; };
+		810474501ECD75270067CEC6 /* LPFBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFBaseTableViewController.m; sourceTree = "<group>"; };
+		810474521ECD75450067CEC6 /* LPFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFBaseViewController.h; sourceTree = "<group>"; };
+		810474531ECD75450067CEC6 /* LPFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFBaseViewController.m; sourceTree = "<group>"; };
+		8104745A1ECD8BC50067CEC6 /* LPFTarBarButon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFTarBarButon.h; sourceTree = "<group>"; };
+		8104745B1ECD8BC50067CEC6 /* LPFTarBarButon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFTarBarButon.m; sourceTree = "<group>"; };
+		8104745D1ECD8C6E0067CEC6 /* LPFTarBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFTarBar.h; sourceTree = "<group>"; };
+		8104745E1ECD8C6E0067CEC6 /* LPFTarBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFTarBar.m; sourceTree = "<group>"; };
+		810474601ECD901B0067CEC6 /* LPFReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFReleaseViewController.h; sourceTree = "<group>"; };
+		810474611ECD901B0067CEC6 /* LPFReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFReleaseViewController.m; sourceTree = "<group>"; };
+		810474631ECD90440067CEC6 /* LPFAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFAttentionViewController.h; sourceTree = "<group>"; };
+		810474641ECD90440067CEC6 /* LPFAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFAttentionViewController.m; sourceTree = "<group>"; };
+		810474661ECD905B0067CEC6 /* LPFFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFFriendsViewController.h; sourceTree = "<group>"; };
+		810474671ECD905B0067CEC6 /* LPFFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFFriendsViewController.m; sourceTree = "<group>"; };
+		810474691ECD906C0067CEC6 /* LPFFindsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFFindsViewController.h; sourceTree = "<group>"; };
+		8104746A1ECD906C0067CEC6 /* LPFFindsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFFindsViewController.m; sourceTree = "<group>"; };
+		8104746C1ECDA1E10067CEC6 /* LPFMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFMainNavigationController.h; sourceTree = "<group>"; };
+		8104746D1ECDA1E10067CEC6 /* LPFMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFMainNavigationController.m; sourceTree = "<group>"; };
+		810474701ECDA3C70067CEC6 /* NSObject+PYThemeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PYThemeExtension.h"; sourceTree = "<group>"; };
+		810474711ECDA3C70067CEC6 /* NSObject+PYThemeExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PYThemeExtension.m"; sourceTree = "<group>"; };
 		814B1A981EC8456400CFFBC7 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814B1A9C1EC8456400CFFBC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		814B1A9E1EC8456400CFFBC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		814B1A9F1EC8456400CFFBC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		814B1AA11EC8456400CFFBC7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		814B1AA21EC8456400CFFBC7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		814B1AA51EC8456400CFFBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814B1AA71EC8456400CFFBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		814B1AAA1EC8456400CFFBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,9 +112,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8104744A1ECD50990067CEC6 /* mainController */ = {
+			isa = PBXGroup;
+			children = (
+				810474561ECD79690067CEC6 /* Views */,
+				810474551ECD79440067CEC6 /* Models */,
+				8104744B1ECD50EF0067CEC6 /* LPFMainTabBarController.h */,
+				8104744C1ECD50EF0067CEC6 /* LPFMainTabBarController.m */,
+				8104746C1ECDA1E10067CEC6 /* LPFMainNavigationController.h */,
+				8104746D1ECDA1E10067CEC6 /* LPFMainNavigationController.m */,
+				8104744F1ECD75270067CEC6 /* LPFBaseTableViewController.h */,
+				810474501ECD75270067CEC6 /* LPFBaseTableViewController.m */,
+				810474521ECD75450067CEC6 /* LPFBaseViewController.h */,
+				810474531ECD75450067CEC6 /* LPFBaseViewController.m */,
+			);
+			path = mainController;
+			sourceTree = "<group>";
+		};
+		8104744E1ECD51020067CEC6 /* LPFSubstepController */ = {
+			isa = PBXGroup;
+			children = (
+				810474601ECD901B0067CEC6 /* LPFReleaseViewController.h */,
+				810474611ECD901B0067CEC6 /* LPFReleaseViewController.m */,
+				810474631ECD90440067CEC6 /* LPFAttentionViewController.h */,
+				810474641ECD90440067CEC6 /* LPFAttentionViewController.m */,
+				810474661ECD905B0067CEC6 /* LPFFriendsViewController.h */,
+				810474671ECD905B0067CEC6 /* LPFFriendsViewController.m */,
+				810474691ECD906C0067CEC6 /* LPFFindsViewController.h */,
+				8104746A1ECD906C0067CEC6 /* LPFFindsViewController.m */,
+			);
+			name = LPFSubstepController;
+			sourceTree = "<group>";
+		};
+		810474551ECD79440067CEC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		810474561ECD79690067CEC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8104745A1ECD8BC50067CEC6 /* LPFTarBarButon.h */,
+				8104745B1ECD8BC50067CEC6 /* LPFTarBarButon.m */,
+				8104745D1ECD8C6E0067CEC6 /* LPFTarBar.h */,
+				8104745E1ECD8C6E0067CEC6 /* LPFTarBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8104746F1ECDA35E0067CEC6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				810474701ECDA3C70067CEC6 /* NSObject+PYThemeExtension.h */,
+				810474711ECDA3C70067CEC6 /* NSObject+PYThemeExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		814B1A8F1EC8456400CFFBC7 = {
 			isa = PBXGroup;
 			children = (
+				810474491ECD49640067CEC6 /* lpf.pch */,
 				814B1A9A1EC8456400CFFBC7 /* test */,
 				814B1AB41EC8456500CFFBC7 /* testTests */,
 				814B1ABF1EC8456500CFFBC7 /* testUITests */,
@@ -101,15 +195,18 @@
 		814B1A9A1EC8456400CFFBC7 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				8104746F1ECDA35E0067CEC6 /* Category */,
+				8104744E1ECD51020067CEC6 /* LPFSubstepController */,
+				8104744A1ECD50990067CEC6 /* mainController */,
 				814B1A9E1EC8456400CFFBC7 /* AppDelegate.h */,
 				814B1A9F1EC8456400CFFBC7 /* AppDelegate.m */,
-				814B1AA11EC8456400CFFBC7 /* ViewController.h */,
-				814B1AA21EC8456400CFFBC7 /* ViewController.m */,
 				814B1AA41EC8456400CFFBC7 /* Main.storyboard */,
 				814B1AA71EC8456400CFFBC7 /* Assets.xcassets */,
 				814B1AA91EC8456400CFFBC7 /* LaunchScreen.storyboard */,
 				814B1AAC1EC8456400CFFBC7 /* Info.plist */,
 				814B1A9B1EC8456400CFFBC7 /* Supporting Files */,
+				810474451ECD47AC0067CEC6 /* NSString+Extension.h */,
+				810474461ECD47AC0067CEC6 /* NSString+Extension.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -273,9 +370,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814B1AA31EC8456400CFFBC7 /* ViewController.m in Sources */,
+				810474651ECD90440067CEC6 /* LPFAttentionViewController.m in Sources */,
+				810474621ECD901B0067CEC6 /* LPFReleaseViewController.m in Sources */,
+				8104745C1ECD8BC50067CEC6 /* LPFTarBarButon.m in Sources */,
+				8104746E1ECDA1E10067CEC6 /* LPFMainNavigationController.m in Sources */,
+				810474721ECDA3C70067CEC6 /* NSObject+PYThemeExtension.m in Sources */,
+				810474511ECD75270067CEC6 /* LPFBaseTableViewController.m in Sources */,
+				810474681ECD905B0067CEC6 /* LPFFriendsViewController.m in Sources */,
+				8104744D1ECD50EF0067CEC6 /* LPFMainTabBarController.m in Sources */,
+				8104746B1ECD906C0067CEC6 /* LPFFindsViewController.m in Sources */,
 				814B1AA01EC8456400CFFBC7 /* AppDelegate.m in Sources */,
+				810474541ECD75450067CEC6 /* LPFBaseViewController.m in Sources */,
 				814B1A9D1EC8456400CFFBC7 /* main.m in Sources */,
+				8104745F1ECD8C6E0067CEC6 /* LPFTarBar.m in Sources */,
+				810474471ECD47AC0067CEC6 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +534,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lipengfei/Desktop/test/lpf.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.test;
@@ -437,6 +547,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lipengfei/Desktop/test/lpf.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = app.test;
@@ -509,6 +621,7 @@
 				814B1AC71EC8456500CFFBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		814B1AC81EC8456500CFFBC7 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +630,7 @@
 				814B1ACA1EC8456500CFFBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		814B1ACB1EC8456500CFFBC7 /* Build configuration list for PBXNativeTarget "testUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +639,7 @@
 				814B1ACD1EC8456500CFFBC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

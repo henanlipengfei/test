@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LPFMainTabBarController.h"
+#import "LPFReleaseViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    LPFMainTabBarController *mainVc = [[LPFMainTabBarController alloc] init];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    window.backgroundColor = [UIColor blackColor];
+    window.rootViewController = mainVc;
+    [window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }
