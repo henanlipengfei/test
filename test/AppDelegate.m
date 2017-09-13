@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LPFMainTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建windows
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //初始化一个tabBar控制器
+    LPFMainTabBarController *tb = [[LPFMainTabBarController alloc] init];
+    self.window.rootViewController = tb;
+    
+    
     return YES;
 }
 
