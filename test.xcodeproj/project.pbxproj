@@ -22,6 +22,8 @@
 		814B1AAB1EC8456400CFFBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814B1AA91EC8456400CFFBC7 /* LaunchScreen.storyboard */; };
 		814B1AB61EC8456500CFFBC7 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814B1AB51EC8456500CFFBC7 /* testTests.m */; };
 		814B1AC11EC8456500CFFBC7 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 814B1AC01EC8456500CFFBC7 /* testUITests.m */; };
+		817173DE1F7B9C99007475CC /* LPFSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817173DD1F7B9C99007475CC /* LPFSearchController.m */; };
+		817173E11F7B9EFF007475CC /* LPFSrarchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817173E01F7B9EFF007475CC /* LPFSrarchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		814B1ABC1EC8456500CFFBC7 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		814B1AC01EC8456500CFFBC7 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		814B1AC21EC8456500CFFBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817173DC1F7B9C99007475CC /* LPFSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFSearchController.h; sourceTree = "<group>"; };
+		817173DD1F7B9C99007475CC /* LPFSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFSearchController.m; sourceTree = "<group>"; };
+		817173DF1F7B9EFF007475CC /* LPFSrarchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPFSrarchViewController.h; sourceTree = "<group>"; };
+		817173E01F7B9EFF007475CC /* LPFSrarchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPFSrarchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		811C8D911F6935380057DAEF /* LPFbaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				817173DB1F7B9C3C007475CC /* controller1s */,
 				811C8D921F6935C80057DAEF /* LPFBaseViewController.h */,
 				811C8D931F6935C80057DAEF /* LPFBaseViewController.m */,
 				811C8D951F6936540057DAEF /* LPFMainTabBarController.h */,
@@ -191,6 +198,17 @@
 				814B1AC21EC8456500CFFBC7 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		817173DB1F7B9C3C007475CC /* controller1s */ = {
+			isa = PBXGroup;
+			children = (
+				817173DC1F7B9C99007475CC /* LPFSearchController.h */,
+				817173DD1F7B9C99007475CC /* LPFSearchController.m */,
+				817173DF1F7B9EFF007475CC /* LPFSrarchViewController.h */,
+				817173E01F7B9EFF007475CC /* LPFSrarchViewController.m */,
+			);
+			name = controller1s;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +344,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817173E11F7B9EFF007475CC /* LPFSrarchViewController.m in Sources */,
 				811C8DA51F6936FF0057DAEF /* MainViewController3.m in Sources */,
 				811C8D9A1F6936890057DAEF /* LPFMainNavigationController.m in Sources */,
 				811C8D971F6936540057DAEF /* LPFMainTabBarController.m in Sources */,
+				817173DE1F7B9C99007475CC /* LPFSearchController.m in Sources */,
 				811C8DA81F69370C0057DAEF /* MianViewController4.m in Sources */,
 				814B1AA01EC8456400CFFBC7 /* AppDelegate.m in Sources */,
 				811C8D941F6935C80057DAEF /* LPFBaseViewController.m in Sources */,
