@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LeftSlideViewController.h"
+#import "LPFMainNavigationController.h"
+#import "LPFMainTabBarController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+//侧滑控制器
+@property (nonatomic,strong) LeftSlideViewController *leftSlideVc;
+//主控制器
+@property (nonatomic,strong) LPFMainTabBarController *mainVc;
 
 
 @end

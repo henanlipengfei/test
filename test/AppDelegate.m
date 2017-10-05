@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "LPFMainTabBarController.h"
+#import "LPFLeftVIewController.h"
+#import "LPFLoginViewController.h"
+#import "LPFAnimateViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,15 +22,44 @@
     //创建windows
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    [self loginStateChange];
     
-    //初始化一个tabBar控制器
-    LPFMainTabBarController *tb = [[LPFMainTabBarController alloc] init];
-    self.window.rootViewController = tb;
-    
-    
+    [self.window makeKeyAndVisible];
     return YES;
 }
-
+#pragma mark - 登录状态改变
+-(void)loginStateChange
+{
+    NSString *LPFNotLoginSucess = [[NSUserDefaults standardUserDefaults] objectForKey:@"loginSucess"];
+    
+    if (LPFNotLoginSucess.length) {
+        //登录成功了
+        if ([LPFNotLoginSucess isEqualToString:@"yes"]) {
+            LPFMainTabBarController *mainTBC = [[LPFMainTabBarController alloc] init];
+            self.mainVc = mainTBC;
+            self.mainVc.delegate = self;
+            LPFLeftVIewController *leftVc = [[LPFLeftVIewController alloc] init];
+            self.leftSlideVc = [[LeftSlideViewController alloc] initWithLeftView:leftVc andMainView:mainTBC];
+            self.window.rootViewController = self.leftSlideVc;
+            
+        }else
+        {
+            //退出登录 进入登录界面
+            LPFLoginViewController *loginVc = [[LPFLoginViewController alloc] init];
+            self.window.rootViewController = loginVc;
+        }
+        
+    }else
+    {
+//        //第一次登录显示新特性
+//        LPFAnimateViewController *animateVc = [[LPFAnimateViewController alloc] init];
+//        self.window.rootViewController = animateVc;
+        //退出登录 进入登录界面
+        LPFLoginViewController *loginVc = [[LPFLoginViewController alloc] init];
+        self.window.rootViewController = loginVc;
+        
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
