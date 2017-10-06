@@ -272,25 +272,27 @@
  */
 - (void)closeLeftView
 {
-//    [UIView beginAnimations:nil context:nil];
-//     [UIView commitAnimations];
+    [UIView beginAnimations:nil context:nil];
+     [UIView commitAnimations];
 
 //    //清除阴影效果
-//    UIView *contentView = self.mainVC.view;
-//    contentView.layer.shadowColor = [UIColor whiteColor].CGColor;
-//    contentView.layer.shadowOffset = CGSizeMake(0, 0);
-//    contentView.layer.shadowOpacity = 0;
-//    contentView.layer.shadowRadius = 0;
+    UIView *contentView = self.mainVC.view;
+    contentView.layer.shadowColor = [UIColor whiteColor].CGColor;
+    contentView.layer.shadowOffset = CGSizeMake(0, 0);
+    contentView.layer.shadowOpacity = 0;
+    contentView.layer.shadowRadius = 0;
     
     LPFLeftVIewController *leftVc = (LPFLeftVIewController *)self.leftVC;
     leftVc.isPus = NO;
     [UIView animateWithDuration:0.2 animations:^{
-//        self.mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
+        self.mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
 
-        self.mainVC.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
+       
         self.closed = YES;
         
-        self.leftView .center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5);
+        self.leftView .center = CGPointMake(kLeftCenterX, kScreenHeight * 0.5 );
+         self.mainVC.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
+        NSLog(@"关闭的%zd",self.mainVC.view.center);
         self.leftView .transform = CGAffineTransformScale(CGAffineTransformIdentity,kLeftScale,kLeftScale);
         self.contentView.alpha = kLeftAlpha;
     } completion:^(BOOL finished) {
@@ -305,80 +307,22 @@
  */
 - (void)openLeftView;
 {
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView commitAnimations];
-//    UIView *contentView = self.mainVC.view;
+    [UIView beginAnimations:nil context:nil];
+    [UIView commitAnimations];
+    UIView *contentView = self.mainVC.view;
     //阴影效果
-//    if (contentView.layer.shadowOpacity  == 0) {
-//        contentView.layer.shadowColor = [UIColor grayColor].CGColor;
-//        contentView.layer.shadowOffset = CGSizeMake(-8, 0);
-//        contentView.layer.shadowOpacity = 0.4;
-//        contentView.layer.shadowRadius = 4;
-//    }
-    
-    //
-    LPFLeftVIewController *leftVc = (LPFLeftVIewController *)self.leftVC;
-
-    //当前用户身份标识
-//    UIImage *image;
-//    NSString *status = WLUserStateValue;
-//    NSString *autype = WLAuditTypeValue;
-//    if ([status isEqualToString:@"1"] || autype.length)
-//    {
-//        NSString *autype = WLAuditTypeValue;
-//        if ([autype isEqualToString:@"person"]) {
-//            //个人
-//            image = [UIImage imageNamed:@"ic_rz_v"];
-//        }else if ([autype isEqualToString:@"business"])
-//        {
-//            //商家
-//            image = [UIImage imageNamed:@"ic_rz_s"];
-//        }
-//    }
-//    leftVc.headBtn.vipIcon.image = image;
-//    leftVc.headBtn.sex = [userDefaults objectForKey:WLSEX];
-//    [leftVc.tableview reloadData];
-//
-//    NSURL *url = [NSURL URLWithString:[NSString thumbnailUrlWithSourceUrl:[userDefaults objectForKey:WLICON] andSize:IMAGES]];
-//    [leftVc.headBtn sd_setImageWithURL:url forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"img_head_174"]];
-//    NSString *nick = [userDefaults objectForKey:WLNICK];
-//    if (nick.length) {
-//        [leftVc.headBtn setTitle:nick forState:UIControlStateNormal];
-//    }else
-//    {
-//        [leftVc.headBtn setTitle:UserId forState:UIControlStateNormal];
-//    }
-//    NSDate *signData = [userDefaults objectForKey:WLHassignuo];
-//
-//    BOOL istoday = NO;
-//    if (signData)
-//    {
-//        if ([signData isKindOfClass:[NSDate class]])
-//        {
-//            istoday = [signData isToday];
-//        }
-//    }
-//    if (!istoday)
-//    {
-//        [leftVc.SignatureBtn setBackgroundImage:[UIImage imageNamed:@"ic_set_checkin"] forState:UIControlStateNormal];
-//        leftVc.SignatureBtn.userInteractionEnabled = YES;
-//    }else
-//    {
-//        [leftVc.SignatureBtn setBackgroundImage:[UIImage imageNamed:@"ic_set_checkin_grey"] forState:UIControlStateNormal];
-//        leftVc.SignatureBtn.userInteractionEnabled = NO;
-//    }
-
+    if (contentView.layer.shadowOpacity  == 0) {
+        contentView.layer.shadowColor = [UIColor grayColor].CGColor;
+        contentView.layer.shadowOffset = CGSizeMake(-8, 0);
+        contentView.layer.shadowOpacity = 0.4;
+        contentView.layer.shadowRadius = 4;
+    }
     [UIView animateWithDuration:0.2 animations:^{
-//        self.mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,kMainPageScale,kMainPageScale);
+        self.mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,kMainPageScale,kMainPageScale);
        CGPoint center = kMainPageCenter;
-        if (self.isSignin) {
-            self.mainVC.view.center = CGPointMake(center.x, center.y);
-            self.isSignin = NO;
-        }else
-        {
-            self.mainVC.view.center = CGPointMake(center.x, center.y+20);
-        }
-        
+       
+        self.mainVC.view.center = CGPointMake(center.x, center.y+20);
+        NSLog(@"打开的%zd",self.mainVC.view.center);
         self.closed = NO;
         
         self.leftView .center = CGPointMake((kScreenWidth - kMainPageDistance) * 0.5, kScreenHeight * 0.5);

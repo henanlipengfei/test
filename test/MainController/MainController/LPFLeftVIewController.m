@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     UITableView *leftView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     leftView.dataSource = self;
     leftView.delegate = self;
